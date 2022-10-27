@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investment Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="calculator">
+      <h1>Investment Calculator</h1>
+      <div class="line">
+        You need <input type="text" id="goal" placeholder="$10000"> in 
+        <input type="text" id="year" placeholder="10"> years
+      </div>
+      <div class="message" id="goalMessage"></div>
+      <div class="message" id="yearMessage"></div>
+      <div class="line">
+        How to get there: <span class="result" id="result">$55</span>
+        <div class="info">
+          <h2>monthly deposits*</h2>
+          <p>*Based on 8% IRR</p>
+        </div>
+      </div>
+      <button id="calculate">Calculate</button>
+    </div>
+  </div>
+</body>
+</html>
